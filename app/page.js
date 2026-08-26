@@ -64,9 +64,12 @@ export default function Home() {
         </div>
 
         <div className="photo">
-          <p>Professional Photo</p>
+          <img
+           src="/ronney.jpg"
+           alt="Ronney Rodríguez Acosta"
+          />
         </div>
-      </section>
+        </section>
 
       {/* ABOUT */}
       <section id="about" className="section">
