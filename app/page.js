@@ -48,6 +48,14 @@ export default function Home() {
             <a href="#experience" className="primary">
               View My Experience
             </a>
+            <a
+              href="/Ronney_Rodriguez_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="secondary"
+            >
+             View Resume
+            </a>
 
             <a href="#contact" className="secondary">
               Contact Me
