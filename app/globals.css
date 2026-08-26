@@ -1,10 +1,14 @@
 :root {
   --bg: #080d19;
+  --bg-soft: #0d1424;
   --card: #111a2d;
+  --card-hover: #16223a;
   --text: #f7f9ff;
   --muted: #a8b2c8;
   --blue: #65a6ff;
+  --blue-light: #9cc8ff;
   --border: rgba(255, 255, 255, 0.1);
+  --border-hover: rgba(101, 166, 255, 0.45);
 }
 
 * {
@@ -23,6 +27,11 @@ body {
     var(--bg);
   color: var(--text);
   font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
 }
 
 main {
@@ -31,31 +40,45 @@ main {
   padding: 0 28px;
 }
 
+/* NAVIGATION */
+
 .nav {
   min-height: 85px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(8, 13, 25, 0.88);
+  backdrop-filter: blur(14px);
 }
 
 .nav strong {
   letter-spacing: 4px;
+  color: white;
+  font-size: 18px;
 }
 
 .nav div {
   display: flex;
-  gap: 25px;
+  gap: 24px;
+  align-items: center;
 }
 
 .nav a {
   color: var(--muted);
   text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s ease;
 }
 
 .nav a:hover {
-  color: white;
+  color: var(--blue);
 }
+
+/* HERO */
 
 .hero {
   min-height: 82vh;
@@ -63,6 +86,7 @@ main {
   grid-template-columns: 1.4fr 0.6fr;
   gap: 60px;
   align-items: center;
+  padding: 70px 0;
 }
 
 .tag {
@@ -70,12 +94,14 @@ main {
   font-size: 13px;
   font-weight: bold;
   letter-spacing: 3px;
+  text-transform: uppercase;
 }
 
 .hero h1 {
-  font-size: clamp(55px, 8vw, 95px);
-  line-height: 0.95;
-  margin: 15px 0;
+  font-size: clamp(52px, 7vw, 88px);
+  line-height: 0.98;
+  margin: 15px 0 22px;
+  letter-spacing: -2px;
 }
 
 .hero h1 span {
@@ -83,28 +109,40 @@ main {
 }
 
 .hero h2 {
-  font-size: 28px;
+  font-size: clamp(23px, 3vw, 30px);
   max-width: 700px;
+  margin-bottom: 22px;
 }
 
 .intro {
   color: var(--muted);
-  font-size: 19px;
-  line-height: 1.7;
-  max-width: 750px;
+  font-size: 18px;
+  line-height: 1.8;
+  max-width: 760px;
 }
+
+/* BUTTONS */
 
 .buttons {
   display: flex;
+  flex-wrap: wrap;
   gap: 15px;
-  margin-top: 30px;
+  margin-top: 32px;
 }
 
 .buttons a {
-  padding: 15px 22px;
+  padding: 14px 22px;
   border-radius: 12px;
   text-decoration: none;
   font-weight: bold;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.buttons a:hover {
+  transform: translateY(-2px);
 }
 
 .primary {
@@ -112,72 +150,144 @@ main {
   color: #080d19;
 }
 
+.primary:hover {
+  background: var(--blue-light);
+}
+
 .secondary {
   border: 1px solid var(--border);
   color: white;
+  background: rgba(255, 255, 255, 0.02);
 }
+
+.secondary:hover {
+  border-color: var(--blue);
+}
+
+/* PHOTO */
 
 .photo {
   height: 420px;
   border-radius: 28px;
   border: 1px solid var(--border);
-  background: linear-gradient(145deg, #1d315c, #10192d);
+  background:
+    linear-gradient(
+      145deg,
+      rgba(29, 49, 92, 0.95),
+      rgba(16, 25, 45, 0.95)
+    );
   display: flex;
   justify-content: center;
   align-items: center;
   color: var(--muted);
+  overflow: hidden;
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.3);
 }
 
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* SECTIONS */
+
 .section {
-  padding: 100px 0;
+  padding: 95px 0;
   border-top: 1px solid var(--border);
 }
 
 .section h2 {
-  font-size: clamp(40px, 5vw, 60px);
-  margin: 10px 0 30px;
+  font-size: clamp(38px, 5vw, 58px);
+  margin: 10px 0 35px;
+  letter-spacing: -1px;
 }
 
 .section > p:not(.tag) {
   color: var(--muted);
-  font-size: 19px;
-  line-height: 1.8;
+  font-size: 18px;
+  line-height: 1.85;
   max-width: 850px;
 }
 
+/* CARDS */
+
 .card {
-  background: rgba(17, 26, 45, 0.8);
+  background: rgba(17, 26, 45, 0.82);
   border: 1px solid var(--border);
   border-radius: 22px;
-  padding: 28px;
-  max-width: 850px;
+  padding: 30px;
+  max-width: 900px;
+  margin-bottom: 24px;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  border-color: var(--border-hover);
+  background: rgba(22, 34, 58, 0.9);
 }
 
 .card h3 {
   font-size: 25px;
-  margin-top: 0;
+  margin: 0 0 8px;
 }
 
 .card p {
+  line-height: 1.75;
+  color: var(--muted);
+}
+
+.card ul {
+  padding-left: 22px;
+  margin-top: 20px;
+}
+
+.card li {
+  color: var(--muted);
+  margin-bottom: 10px;
   line-height: 1.7;
+}
+
+.card li::marker {
+  color: var(--blue);
 }
 
 .muted {
   color: var(--muted);
+  margin: 4px 0;
 }
+
+/* SKILLS */
 
 .skills {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
+  max-width: 950px;
 }
 
 .skills span {
-  padding: 13px 18px;
+  padding: 12px 17px;
   border: 1px solid var(--border);
   border-radius: 30px;
   background: rgba(255, 255, 255, 0.04);
+  color: #dce6f8;
+  font-size: 14px;
+  transition:
+    border-color 0.2s ease,
+    transform 0.2s ease;
 }
+
+.skills span:hover {
+  border-color: var(--blue);
+  transform: translateY(-2px);
+}
+
+/* CONTACT */
 
 .contact {
   text-align: center;
@@ -188,16 +298,55 @@ main {
   margin-right: auto;
 }
 
+.contact a {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* FOOTER */
+
 footer {
   text-align: center;
   padding: 45px 0;
   color: var(--muted);
   border-top: 1px solid var(--border);
+  font-size: 14px;
 }
+
+/* TABLET */
+
+@media (max-width: 950px) {
+  .nav div {
+    gap: 14px;
+  }
+
+  .nav a {
+    font-size: 13px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr 0.55fr;
+    gap: 35px;
+  }
+
+  .photo {
+    height: 360px;
+  }
+}
+
+/* MOBILE */
 
 @media (max-width: 750px) {
   main {
     padding: 0 18px;
+  }
+
+  .nav {
+    min-height: 70px;
   }
 
   .nav div {
@@ -206,19 +355,38 @@ footer {
 
   .hero {
     grid-template-columns: 1fr;
-    padding: 70px 0;
+    min-height: auto;
+    padding: 65px 0;
+  }
+
+  .hero h1 {
+    font-size: clamp(46px, 14vw, 70px);
   }
 
   .photo {
     height: 350px;
+    max-width: 360px;
+    width: 100%;
   }
 
   .buttons {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
+  }
+
+  .buttons a {
+    text-align: center;
   }
 
   .section {
     padding: 70px 0;
+  }
+
+  .section h2 {
+    margin-bottom: 28px;
+  }
+
+  .card {
+    padding: 23px;
   }
 }
