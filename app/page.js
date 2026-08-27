@@ -14,6 +14,7 @@ export default function Home() {
           <a href="#projects">Projects</a>
           <a href="#certifications">Certifications</a>
           <a href="#contact">Contact</a>
+          <a href="#journey">My Journey</a>
         </div>
       </nav>
 
@@ -47,6 +48,9 @@ export default function Home() {
           <div className="buttons">
             <a href="#experience" className="primary">
               View My Experience
+            </a>
+              <a href="/journey" className="secondary">
+               My Professional Journey
             </a>
             <a
               href="/Ronney_Rodriguez_Resume.pdf"
