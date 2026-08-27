@@ -195,7 +195,7 @@ export default function Home() {
           <p className="muted">
             AC Marriott Fort Lauderdale Airport · Florida
           </p>
-          <p className="muted">October 2024 – Present</p>
+          <p className="muted">October 2024 – February 2026</p>
 
           <ul>
             <li>Food preparation and kitchen operations.</li>
