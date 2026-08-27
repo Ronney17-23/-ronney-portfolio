@@ -390,3 +390,275 @@ footer {
     padding: 23px;
   }
 }
+/* =========================================
+   PROFESSIONAL JOURNEY
+   ========================================= */
+.journey-page {
+  max-width: 1180px;
+}
+
+.journey-page .nav > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.journey-hero {
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 100px 0 80px;
+  border-bottom: 1px solid var(--border);
+}
+
+.journey-hero h1 {
+  max-width: 1050px;
+  font-size: clamp(48px, 7vw, 86px);
+  line-height: 1;
+  letter-spacing: -3px;
+  margin: 18px 0 30px;
+}
+
+.journey-hero h1 span {
+  color: var(--blue);
+}
+
+.journey-intro {
+  max-width: 780px;
+  color: var(--muted);
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+.journey-summary {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-top: 55px;
+  max-width: 900px;
+}
+
+.journey-summary div {
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 22px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.journey-summary strong {
+  display: block;
+  color: var(--blue);
+  font-size: 30px;
+  margin-bottom: 4px;
+}
+
+.journey-summary span {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.journey-timeline {
+  padding: 100px 0;
+  max-width: 950px;
+}
+
+.journey-chapter {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  position: relative;
+  padding-bottom: 90px;
+}
+
+.journey-chapter:last-child {
+  padding-bottom: 20px;
+}
+
+.journey-chapter::before {
+  content: "";
+  position: absolute;
+  left: 31px;
+  top: 55px;
+  bottom: 0;
+  width: 1px;
+  background: var(--border);
+}
+
+.journey-chapter:last-child::before {
+  display: none;
+}
+
+.chapter-marker {
+  position: relative;
+  z-index: 2;
+}
+
+.chapter-marker span {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--blue);
+  font-weight: bold;
+}
+
+.chapter-content {
+  padding: 5px 0 0 15px;
+}
+
+.chapter-period {
+  color: var(--blue);
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin: 0 0 8px;
+}
+
+.chapter-content h2 {
+  font-size: clamp(32px, 4vw, 48px);
+  margin: 0 0 28px;
+}
+
+.chapter-content > p {
+  max-width: 760px;
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.85;
+}
+
+.journey-highlight {
+  color: white !important;
+  font-size: 21px !important;
+  font-weight: 600;
+  border-left: 3px solid var(--blue);
+  padding: 8px 0 8px 22px;
+  margin: 32px 0;
+}
+
+.featured-chapter .chapter-marker span {
+  background: var(--blue);
+  color: var(--bg);
+}
+
+.achievement {
+  max-width: 760px;
+  margin: 35px 0;
+  padding: 28px;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: linear-gradient(
+    145deg,
+    rgba(101, 166, 255, 0.12),
+    rgba(17, 26, 45, 0.8)
+  );
+}
+
+.achievement > span {
+  color: var(--blue);
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.achievement h3 {
+  font-size: 24px;
+  margin: 10px 0 15px;
+}
+
+.achievement p {
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.epilogue {
+  padding: 110px 0;
+  border-top: 1px solid var(--border);
+}
+
+.epilogue h2 {
+  max-width: 850px;
+  font-size: clamp(42px, 6vw, 70px);
+  line-height: 1.05;
+  margin: 15px 0 45px;
+}
+
+.epilogue-text {
+  max-width: 800px;
+}
+
+.epilogue-text p {
+  color: var(--muted);
+  font-size: 19px;
+  line-height: 1.85;
+}
+
+.final-quote {
+  color: white !important;
+  font-size: clamp(25px, 3vw, 34px) !important;
+  font-weight: bold;
+  line-height: 1.4 !important;
+  margin-top: 55px;
+}
+
+.final-quote span {
+  color: var(--blue);
+}
+
+.journey-actions {
+  margin-top: 45px;
+}
+
+@media (max-width: 750px) {
+  .journey-hero {
+    min-height: auto;
+    padding: 70px 0;
+  }
+
+  .journey-hero h1 {
+    letter-spacing: -2px;
+  }
+
+  .journey-summary {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .journey-timeline {
+    padding: 70px 0;
+  }
+
+  .journey-chapter {
+    grid-template-columns: 55px 1fr;
+    padding-bottom: 70px;
+  }
+
+  .journey-chapter::before {
+    left: 21px;
+    top: 44px;
+  }
+
+  .chapter-marker span {
+    width: 44px;
+    height: 44px;
+    font-size: 12px;
+  }
+
+  .chapter-content {
+    padding-left: 10px;
+  }
+
+  .chapter-content > p {
+    font-size: 17px;
+  }
+
+  .journey-highlight {
+    font-size: 18px !important;
+    padding-left: 16px;
+  }
+
+  .epilogue {
+    padding: 75px 0;
+  }
+}
