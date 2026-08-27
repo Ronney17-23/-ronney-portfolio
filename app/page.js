@@ -283,65 +283,154 @@ export default function Home() {
       </section>
 
       {/* CERTIFICATIONS */}
-      <section id="certifications" className="section">
-        <p className="tag">PROFESSIONAL DEVELOPMENT</p>
-        <h2>Certifications & Training</h2>
+<section id="certifications" className="section">
+  <p className="tag">PROFESSIONAL DEVELOPMENT</p>
+  <h2>Certifications & Education</h2>
 
-        <div className="card">
-          <ul>
-            <li>AWS Fundamentals – Udemy</li>
-            <li>SQL – Udemy</li>
-            <li>Base24 Training</li>
-            <li>IT Security Training</li>
-            <li>Microcomputer Operator Certification</li>
-          </ul>
-        </div>
-      </section>
+  <p>
+    A selection of certifications and training that reflect my continuous
+    professional development in technology, cybersecurity, programming,
+    education, and other areas of learning.
+  </p>
 
-      {/* LANGUAGES */}
-      <section className="section">
-        <p className="tag">LANGUAGES</p>
-        <h2>Languages</h2>
+  <div className="certificate-grid">
+    <a
+      href="/Certificado-2015.jpg"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="certificate-card"
+    >
+      <img
+        src="/Certificado-2015.jpg"
+        alt="Microcomputer Operator Certification"
+      />
+      <div>
+        <span>2015</span>
+        <h3>Microcomputer Operator</h3>
+        <p>Joven Club de Computación y Electrónica</p>
+      </div>
+    </a>
 
-        <div className="skills">
-          <span>Spanish — Native</span>
-          <span>English — Professional Working Proficiency</span>
-        </div>
-      </section>
+    <a
+      href="/Certificado-High-School-Cuba-2016.jpeg"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="certificate-card"
+    >
+      <img
+        src="/Certificado-High-School-Cuba-2016.jpeg"
+        alt="High School Diploma"
+      />
+      <div>
+        <span>2016</span>
+        <h3>High School Diploma</h3>
+        <p>Adult Education · Cuba</p>
+      </div>
+    </a>
 
-      {/* CONTACT */}
-      <section id="contact" className="section contact">
-        <p className="tag">CONTACT</p>
-        <h2>Let's Connect</h2>
+    <a
+      href="/Certificado-2017.png"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="certificate-card"
+    >
+      <img
+        src="/Certificado-2017.png"
+        alt="Information Technology Security Training"
+      />
+      <div>
+        <span>2017</span>
+        <h3>Information Technology Security</h3>
+        <p>Banco de Crédito y Comercio</p>
+      </div>
+    </a>
 
-        <p>
-          I am open to opportunities in IT Support, Service Desk,
-          IT Operations, Technical Support, Cloud Operations, and related
-          technology roles.
-        </p>
+    <a
+      href="/Curso-Cocina-2014.jpeg"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="certificate-card"
+    >
+      <img
+        src="/Curso-Cocina-2014.jpeg"
+        alt="Culinary Arts Certification"
+      />
+      <div>
+        <span>2014</span>
+        <h3>Culinary Arts</h3>
+        <p>Federación de Asociaciones Culinarias de Cuba</p>
+      </div>
+    </a>
 
-        <p>
-          <strong>Location:</strong> Miramar, Florida
-        </p>
+    <a
+      href="/Curso-Udemy-Agus-2022.jpeg"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="certificate-card"
+    >
+      <img
+        src="/Curso-Udemy-Agus-2022.jpeg"
+        alt="Programming Introduction Course"
+      />
+      <div>
+        <span>2022</span>
+        <h3>Introduction to Programming</h3>
+        <p>Udemy</p>
+      </div>
+    </a>
 
-        <p>
-          <strong>Email:</strong>{" "}
-          <a href="mailto:reguez.acosta@gmail.com">
-            reguez.acosta@gmail.com
-          </a>
-        </p>
+    <a
+      href="/Curso-Udemy-2022.jpeg"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="certificate-card"
+    >
+      <img
+        src="/Curso-Udemy-2022.jpeg"
+        alt="Linux Essentials Certification"
+      />
+      <div>
+        <span>2022</span>
+        <h3>Linux Essentials</h3>
+        <p>Udemy</p>
+      </div>
+    </a>
 
-        <p>
-          <strong>LinkedIn:</strong>{" "}
-          <a
-            href="https://www.linkedin.com/in/ronney-rodriguez-acosta-2233a2154"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View my LinkedIn profile
-          </a>
-        </p>
-      </section>
+    <a
+      href="/Curso-oct-2022.jpeg"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="certificate-card"
+    >
+      <img
+        src="/Curso-oct-2022.jpeg"
+        alt="API and Web Service Introduction"
+      />
+      <div>
+        <span>2022</span>
+        <h3>API & Web Service Introduction</h3>
+        <p>Udemy</p>
+      </div>
+    </a>
+
+    <a
+      href="/Curso-Nexus-jun-2026.jpeg"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="certificate-card"
+    >
+      <img
+        src="/Curso-Nexus-jun-2026.jpeg"
+        alt="CyberSec First Responder Advanced"
+      />
+      <div>
+        <span>2026</span>
+        <h3>CyberSec First Responder Advanced</h3>
+        <p>CertNexus · Coursera</p>
+      </div>
+    </a>
+  </div>
+</section>
 
       {/* FOOTER */}
       <footer>
