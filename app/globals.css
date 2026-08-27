@@ -759,8 +759,10 @@ footer {
 .gallery-card img {
   width: 100%;
   height: 300px;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center;
   display: block;
+  background: #0b1220;
 }
 
 .gallery-info {
