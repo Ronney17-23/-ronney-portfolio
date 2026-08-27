@@ -209,6 +209,105 @@ export default function Home() {
           </ul>
         </div>
       </section>
+  
+  {/* PROFESSIONAL GALLERY */}
+<section className="section">
+  <p className="tag">PROFESSIONAL GALLERY</p>
+  <h2>Moments From My Career</h2>
+
+  <p>
+    A visual look at different stages of my professional journey across
+    technology and hospitality.
+  </p>
+
+  <div className="professional-gallery">
+    <a
+      href="/Red-Link-Despedida-de-ano-2019.jpeg"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="gallery-card"
+    >
+      <img
+        src="/Red-Link-Despedida-de-ano-2019.jpeg"
+        alt="Red Link professional team event in 2019"
+      />
+
+      <div className="gallery-info">
+        <span>RED LINK · 2019</span>
+        <h3>Team Celebration</h3>
+        <p>
+          One of the many moments shared with colleagues during my years
+          working in financial technology operations at Red Link.
+        </p>
+      </div>
+    </a>
+
+    <a
+      href="/Despues-Pandemia-Red-Link-sep-2021.jpeg"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="gallery-card"
+    >
+      <img
+        src="/Despues-Pandemia-Red-Link-sep-2021.jpeg"
+        alt="Red Link team after the pandemic in 2021"
+      />
+
+      <div className="gallery-info">
+        <span>RED LINK · 2021</span>
+        <h3>Returning Together</h3>
+        <p>
+          A team moment after the pandemic period, representing
+          collaboration, resilience, and continuity in a critical
+          technology environment.
+        </p>
+      </div>
+    </a>
+
+    <a
+      href="/Evento-Le-Meridien-Febrero-2025.jpeg"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="gallery-card"
+    >
+      <img
+        src="/Evento-Le-Meridien-Febrero-2025.jpeg"
+        alt="Banquet event at Le Meridien in February 2025"
+      />
+
+      <div className="gallery-info">
+        <span>LE MERIDIEN · 2025</span>
+        <h3>Banquet Operations</h3>
+        <p>
+          Experience supporting banquet preparation and event operations
+          in a fast-paced hospitality environment.
+        </p>
+      </div>
+    </a>
+
+    <a
+      href="/Mariott-AC-Despedida-Febrero-2026.jpeg"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="gallery-card"
+    >
+      <img
+        src="/Mariott-AC-Despedida-Febrero-2026.jpeg"
+        alt="AC Marriott team farewell in February 2026"
+      />
+
+      <div className="gallery-info">
+        <span>AC MARRIOTT · 2026</span>
+        <h3>Closing a Professional Chapter</h3>
+        <p>
+          A farewell moment with colleagues at AC Marriott Fort Lauderdale
+          Airport after completing an important stage of my hospitality
+          experience.
+        </p>
+      </div>
+    </a>
+  </div>
+</section>
 
       {/* SKILLS */}
       <section id="skills" className="section">
